@@ -1,20 +1,26 @@
 <div class="product-form">
-    <h2>Nuevo Producto</h2>
+    <h2>Nuevo Producto </h2>
     
-    <div class="form-group">
-        <label for="title">Título</label>
-        <input type="text" id="title" [(ngModel)]="newProduct.title" placeholder="Ej. Zapatillas Running">
-    </div>
+    <!-- Se inicializa el Template Driven Form -->
+    <form #productForm="ngForm" (ngSubmit)="addProduct(productForm)">
 
-    <div class="form-group">
-        <label for="price">Precio</label>
-        <input type="number" id="price" [(ngModel)]="newProduct.price" placeholder="0.00">
-    </div>
+        <div class="form-group">
+            <label for="title">Título</label>
+            <!-- Directiva ngModel (sin corchetes) y atributo name obligatorios -->
+            <input type="text" id="title" ngModel placeholder="Ej. Zapatillas Running" name="title" >
+        </div>
 
-    <div class="form-group">
-        <label for="quantity">Cantidad</label>
-        <input type="number" id="quantity" [(ngModel)]="newProduct.quantity" placeholder="0">
-    </div>
+        <div class="form-group">
+            <label for="price">Precio</label>
+            <input type="number" id="price" ngModel placeholder="0.00" name="price" >
+        </div>
 
-    <button (click)="addProduct()" class="btn-submit">Añadir producto</button>
+        <div class="form-group">
+            <label for="quantity">Cantidad</label>
+            <input type="number" id="quantity" ngModel placeholder="0" name="quantity" >
+        </div>
+
+        <button type="submit" class="btn-submit">Añadir producto</button>
+
+    </form>
 </div>
