@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    background-color: hsl(60, 44%, 58%);
+    color: black;
+    padding: 1rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+    border-bottom: black 0.5px solid;
+}
+
+main {
+    display: flex;
+}
+
+.formulario{
+    flex: 30%; 
+}
+
+.listado{
+    flex: 70%; 
+}
+
+

@@ -1,0 +1,25 @@
+.total-amount {
+    font-size: 2rem;
+    font-weight: 800;
+    color: #0f172a;
+    letter-spacing: -1px;
+}
+
+.total-carrito {
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 10px;
+    font-family: 'Inter', sans-serif;
+}
+
+.summary-item {
+    background: rgb(219, 255, 214);
+    border-radius: 16px;
+    padding: 20px;
+    max-width: 300px;
+    position: relative;
+    border: 1px solid #f0f0f0;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.02);
+    cursor: pointer;
+}

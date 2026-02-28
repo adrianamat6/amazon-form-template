@@ -1,0 +1,9 @@
+.product-list {
+    display: grid;
+    /* Crea columnas automáticas de mínimo 280px. Si hay espacio, crecen por igual */
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 24px; /* Espacio entre tarjetas */
+    padding: 20px;
+    margin: 0 auto;    /* Centra la cuadrícula en la pantalla */
+    flex-wrap: wrap;
+}
